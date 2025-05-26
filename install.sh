@@ -4,4 +4,4 @@
 DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Symlink starship config
-ln -sf "$DOTFILES/starship.toml" ~/.config/starship.toml
+ln -sf "$DOTFILES/starship/starship.toml" ~/.config/starship.toml
