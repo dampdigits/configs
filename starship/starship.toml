@@ -1,9 +1,12 @@
+# starship.toml: This is a configuration file for Starship, a cross-shell prompt.
+# For more information, see: https://starship.rs/config/
+
 # Warning: This config does not include keys that have an unset value
 
 # $all is shorthand for $username$hostname$localip$shlvl$singularity$kubernetes$directory$vcsh$fossil_branch$git_branch$git_commit$git_state$git_metrics$git_status$hg_branch$pijul_channel$docker_context$package$bun$c$cmake$cobol$daml$dart$deno$dotnet$elixir$elm$erlang$fennel$golang$gradle$haskell$haxe$helm$java$julia$kotlin$lua$nim$nodejs$ocaml$opa$perl$php$pulumi$purescript$python$raku$rlang$red$ruby$rust$scala$solidity$swift$terraform$vlang$vagrant$zig$buf$guix_shell$nix_shell$conda$meson$spack$memory_usage$aws$gcloud$openstack$azure$env_var$crystal$custom$sudo$cmd_duration$line_break$jobs$battery$time$status$container$os$shell$character
 
 "$schema" = "https://starship.rs/config-schema.json"
-format = "$all"
+format = "$os$all"
 right_format = ""
 continuation_prompt = "[∙](bright-white) "
 scan_timeout = 30
@@ -30,7 +33,7 @@ force_display = false
 format = "on [$symbol($subscription)]($style) "
 symbol = "󰠅 "
 style = "blue bold"
-disabled = true
+disabled = false
 
 [azure.subscription_aliases]
 
@@ -40,7 +43,7 @@ charging_symbol = "󰂄 "
 discharging_symbol = "󰂃 "
 unknown_symbol = "󰁽 "
 empty_symbol = "󰂎 "
-disabled = false
+disabled = true
 format = "[$symbol$percentage]($style) "
 
 [[battery.display]]
@@ -319,7 +322,7 @@ format = "via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold green"
-disabled = true
+disabled = false
 detect_extensions = ["fnl"]
 detect_files = []
 detect_folders = []
@@ -331,11 +334,11 @@ disabled = false
 
 [fossil_branch]
 format = "on [$symbol$branch]($style) "
-symbol = " "
+symbol = " "
 style = "bold purple"
 truncation_length = 9223372036854775807
 truncation_symbol = "…"
-disabled = true
+disabled = false
 
 [gcloud]
 format = 'on [$symbol$account(@$domain)(\($region\))]($style) '
@@ -350,7 +353,7 @@ detect_env_vars = []
 
 [git_branch]
 format = "[$symbol$branch(:$remote_branch)]($style) "
-symbol = " "
+symbol = "󰘬 "
 style = "bold purple"
 truncation_length = 9223372036854775807
 truncation_symbol = "…"
@@ -361,12 +364,13 @@ disabled = false
 
 [git_commit]
 commit_hash_length = 7
-format = '[\($hash$tag\)]($style) '
+format = '[$tag_symbol\($hash$tag\)]($style) '
+# symbol = ' '
 style = "green bold"
 only_detached = true
 disabled = false
-tag_symbol = " 🏷  "
-tag_disabled = true
+tag_symbol = "  "
+tag_disabled = false
 tag_max_candidates = 0
 
 [git_metrics]
@@ -374,7 +378,7 @@ added_style = "bold green"
 deleted_style = "bold red"
 only_nonzero_diffs = true
 format = "([+$added]($added_style) )([-$deleted]($deleted_style) )"
-disabled = true
+disabled = false
 ignore_submodules = false
 
 [git_state]
@@ -497,12 +501,12 @@ detect_files = [
 detect_folders = []
 
 [hg_branch]
-symbol = " "
+symbol = " "
 style = "bold purple"
 format = "on [$symbol$branch(:$topic)]($style) "
 truncation_length = 9223372036854775807
 truncation_symbol = "…"
-disabled = true
+disabled = false
 
 [hostname]
 ssh_only = true
@@ -580,7 +584,7 @@ detect_folders = []
 symbol = "☸ "
 format = '[$symbol$context( \($namespace\))]($style) in '
 style = "cyan bold"
-disabled = true
+disabled = false
 detect_extensions = []
 detect_files = []
 detect_folders = []
@@ -596,7 +600,7 @@ disabled = false
 ssh_only = true
 format = "[$localipv4]($style) "
 style = "yellow bold"
-disabled = true
+disabled = false
 
 [lua]
 format = "via [$symbol($version )]($style)"
@@ -714,9 +718,12 @@ style = "bold yellow"
 disabled = false
 
 [os]
-format = "[$symbol]($style)"
-style = "bold white"
-disabled = true
+format = """
+[░▒▓](green)\
+[ $symbol ]($style)\
+[](bg:blue fg:green)"""
+style = "bg:green fg:#000000"
+disabled = false
 
 [os.symbols]
 Alpaquita = " "
@@ -805,12 +812,12 @@ detect_files = [
 detect_folders = []
 
 [pijul_channel]
-symbol = " "
+symbol = " "
 style = "bold purple"
 format = "on [$symbol$channel]($style) "
 truncation_length = 9223372036854775807
 truncation_symbol = "…"
-disabled = true
+disabled = false
 
 [pulumi]
 format = "via [$symbol($username@)$stack]($style) "
@@ -946,28 +953,28 @@ detect_folders = [".metals"]
 
 [shell]
 format = "[$indicator]($style) "
-bash_indicator = "bsh"
-fish_indicator = "fsh"
-zsh_indicator = "zsh"
-powershell_indicator = "psh"
+bash_indicator = ""
+fish_indicator = " "
+zsh_indicator = "ZSH"
+powershell_indicator = "󰨊"
 ion_indicator = "ion"
 elvish_indicator = "esh"
 tcsh_indicator = "tsh"
 nu_indicator = "nu"
 xonsh_indicator = "xsh"
-cmd_indicator = "cmd"
-unknown_indicator = ""
+cmd_indicator = " "
+unknown_indicator = " "
 style = "white bold"
-disabled = true
+disabled = false
 
 [shlvl]
 threshold = 2
 format = "[$symbol$shlvl]($style) "
-symbol = "↕️  "
+symbol = " "
 repeat = false
 repeat_offset = 0
 style = "bold yellow"
-disabled = true
+disabled = false
 
 [singularity]
 symbol = ""
@@ -995,26 +1002,26 @@ disabled = false
 
 [status]
 format = "[$symbol$status]($style) "
-symbol = "❌"
-success_symbol = ""
-not_executable_symbol = "🚫"
-not_found_symbol = "🔍"
+symbol = "x"
+success_symbol = ""
+not_executable_symbol = " "
+not_found_symbol = " "
 sigint_symbol = "🧱"
-signal_symbol = "⚡"
+signal_symbol = "󰒢 "
 style = "bold red"
 map_symbol = false
 recognize_signal_code = true
 pipestatus = false
-pipestatus_separator = "|"
+pipestatus_separator = "󰟥"
 pipestatus_format = '\[$pipestatus\] => [$symbol$common_meaning$signal_name$maybe_int]($style)'
 disabled = true
 
 [sudo]
 format = "[as $symbol]($style)"
-symbol = "🧙 "
-style = "bold blue"
+symbol = " "
+style = "bold red"
 allow_windows = false
-disabled = true
+disabled = false
 
 [swift]
 format = "via [$symbol($version )]($style)"
@@ -1043,7 +1050,7 @@ detect_folders = [".terraform"]
 [time]
 format = "at [$time]($style) "
 style = "bold yellow"
-use_12hr = false
+use_12hr = true
 disabled = true
 utc_time_offset = "local"
 time_range = "-"
@@ -1051,9 +1058,6 @@ time_range = "-"
 [username]
 # format = " [$user]($style) on "
 format = """
-[░▒▓](green)\
-[  ](bg:green fg:#000000)\
-[](bg:blue fg:green)\
 [ $user]($style)\
 [](bg:cyan fg:blue)"""
 style_root = "bg:red fg:#ffffff"
@@ -1104,3 +1108,5 @@ detect_folders = []
 [custom]
 
 
+# Author: dampdigits <dampdigits@gmail.com>
+# Source: https://github.com/dampdigits/dotfiles
