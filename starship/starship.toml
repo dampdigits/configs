@@ -355,7 +355,7 @@ detect_env_vars = []
 
 [git_branch]
 format = "[ $symbol$branch(:$remote_branch)]($style) "
-symbol = "󰘬 "
+symbol = "󰊢 "
 style = "bold purple"
 truncation_length = 9223372036854775807
 truncation_symbol = "…"
@@ -370,7 +370,7 @@ format = '[$tag_symbol\($hash$tag\)]($style) '
 style = "green bold"
 only_detached = true
 disabled = false
-tag_symbol = "  "
+tag_symbol = ""
 tag_disabled = false
 tag_max_candidates = 0
 
@@ -384,8 +384,8 @@ ignore_submodules = false
 
 [git_state]
 rebase = "REBASING"
-merge = "MERGING"
-revert = "REVERTING"
+merge = " MERGING"
+revert = " REVERTING"
 cherry_pick = "CHERRY-PICKING"
 bisect = "BISECTING"
 am = "AM"
@@ -398,17 +398,17 @@ disabled = false
 format = '([\[$all_status$ahead_behind\]]($style) )'
 style = "red bold"
 stashed = '\$'
-ahead = "⇡"
-behind = "⇣"
+ahead = ""
+behind = ""
 up_to_date = ""
-diverged = "⇕"
-conflicted = "="
+diverged = "󰘬"
+conflicted = " "
 deleted = "✘"
 renamed = "»"
 modified = "!"
 staged = "+"
 untracked = "?"
-typechanged = ""
+typechanged = " "
 ignore_submodules = false
 disabled = false
 
