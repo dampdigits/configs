@@ -402,13 +402,13 @@ ahead = ""
 behind = ""
 up_to_date = ""
 diverged = "󰘬"
-conflicted = " "
+conflicted = ""
 deleted = "✘"
 renamed = "»"
 modified = "!"
 staged = "+"
 untracked = "?"
-typechanged = " "
+typechanged = "󰑕"
 ignore_submodules = false
 disabled = false
 
