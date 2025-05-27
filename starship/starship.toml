@@ -330,7 +330,7 @@ detect_files = []
 detect_folders = []
 
 [fill]
-style = "white"
+style = "white dimmed"
 symbol = "─"
 disabled = false
 
