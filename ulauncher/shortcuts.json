@@ -1,0 +1,72 @@
+{
+    "f52d9433-39bb-4045-a36a-dd0242913e2b": {
+        "id": "f52d9433-39bb-4045-a36a-dd0242913e2b",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/nix/store/xk17qmnnp9c923fgc1z2ahx38hj3shwb-ulauncher-5.15.7/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1745665253.4579744
+    },
+    "28d621e6-0a55-45b1-9b1f-013dbe62da10": {
+        "id": "28d621e6-0a55-45b1-9b1f-013dbe62da10",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "https://stackoverflow.com/search?q=%s",
+        "icon": "/nix/store/xk17qmnnp9c923fgc1z2ahx38hj3shwb-ulauncher-5.15.7/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1745665253.4580114
+    },
+    "a4cf167f-eb1b-4498-acb3-0c137167a42f": {
+        "id": "a4cf167f-eb1b-4498-acb3-0c137167a42f",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/nix/store/xk17qmnnp9c923fgc1z2ahx38hj3shwb-ulauncher-5.15.7/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1745665253.4580395
+    },
+    "c0e4ddda-94bb-478b-b43d-c7aee2c8ca0f": {
+        "id": "c0e4ddda-94bb-478b-b43d-c7aee2c8ca0f",
+        "name": "Nix Packages",
+        "keyword": "nixpkg",
+        "cmd": "https://search.nixos.org/packages?channel=24.11&from=0&size=50&sort=relevance&type=packages&query=%s",
+        "icon": "~/Pictures/icons/Nix_Snowflake_Logo.svg",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1745790748.0733497
+    },
+    "c61f20e5-3e69-4556-abe6-e67077e9f0c3": {
+        "id": "c61f20e5-3e69-4556-abe6-e67077e9f0c3",
+        "name": "Leetcode Profile",
+        "keyword": "lc",
+        "cmd": "https://leetcode.com/%s",
+        "icon": "~/Pictures/icons/leetcode_logo.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1742295377.7428389
+    },
+    "ec1a47a0-48bb-491d-8c8a-523642029d9c": {
+        "id": "ec1a47a0-48bb-491d-8c8a-523642029d9c",
+        "name": "Github",
+        "keyword": "gh",
+        "cmd": "https://github.com/%s",
+        "icon": "~/Pictures/icons/github.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1742295535.2191598
+    },
+    "30e75505-3af8-4ff1-949a-c5df2b2936af": {
+        "id": "30e75505-3af8-4ff1-949a-c5df2b2936af",
+        "name": "URL",
+        "keyword": "url",
+        "cmd": "https://%s",
+        "icon": "~/Pictures/icons/web.png",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1744135949.0440211
+    }
+}
