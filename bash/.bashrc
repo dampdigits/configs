@@ -47,4 +47,5 @@ export PATH="$HOME/.local/bin:$PATH"
 # Load Starship prompt
 eval "$(starship init bash)"
 
+
 # Author: dampdigits <dampdigits@gmail.com>

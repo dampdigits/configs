@@ -49,5 +49,6 @@ alias activate='source venv/bin/activate'
 
 #########################################################################################################
 
-# Author: dampdigits
+
+# Author: dampdigits <dampdigits@gmail.com>
 

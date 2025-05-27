@@ -330,3 +330,6 @@ if has('gui_running')
 endif
 
 " }}}
+
+
+" Author: dampdigits <dampdigits@gmail.com>
