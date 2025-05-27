@@ -1,0 +1,12 @@
+; Load dampdigits config
+[includeIf "gitdir:~/projects/dampdigits/"]
+	path = ~/.config/.gitconfig-dampdigits
+
+; Load geekygiganerd config
+[includeIf "gitdir:~/projects/geekygiganerd/"]
+	path = ~/.config/.gitconfig-geekygiganerd
+[user]
+	name = dampdigits
+	email = dampdigits@gmail.com
+[init]
+	defaultBranch = main

@@ -1,0 +1,9 @@
+[user]
+	name = geekygiganerd
+	email = sameersalam980@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
