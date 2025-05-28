@@ -63,18 +63,6 @@ ln -sf "$DOTFILES_DIR/git/.gitconfig-dampdigits" "$HOME/.gitconfig-dampdigits"
 ln -sf "$DOTFILES_DIR/git/.gitconfig-geekygiganerd" "$HOME/.gitconfig-geekygiganerd"
 
 ###################################################################################################
-## Install SSH configuration
-
-# Backup any existing SSH config
-if [ -e "$HOME/.ssh/config" ]; then
-    timestamp=$(date +%Y%m%d%H%M%S)
-    backup_file="$HOME/.ssh/config.backup.$timestamp"
-    mv "$HOME/.ssh/config" "$backup_file"
-fi
-# Create new symlink
-ln -sf "$DOTFILES_DIR/.ssh/config" "$HOME/.ssh/config"
-
-###################################################################################################
 
 
 # Author: dampdigits <dampdigits@gmail.com>
