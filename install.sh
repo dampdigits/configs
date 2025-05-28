@@ -25,7 +25,7 @@ ln -sf "$DOTFILES_DIR/starship/starship.toml" "$HOME/.config/starship.toml"
 ## Install bash configuration
 
 # Backup any existing bash config and create new symlinks
-for file in "$DOTFILES_DIR/bash/"*; do
+for file in "$DOTFILES_DIR/bash/."*; do
     filename=$(basename "$file")
     if [ -e "$HOME/$filename" ]; then
         timestamp=$(date +%Y%m%d%H%M%S)
