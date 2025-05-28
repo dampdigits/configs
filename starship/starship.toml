@@ -67,7 +67,7 @@ detect_files = [
 detect_folders = []
 
 [bun]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "🍞 "
 style = "bold red"
@@ -80,7 +80,7 @@ detect_files = [
 detect_folders = []
 
 [c]
-format = "via [$symbol($version(-$name) )]($style)"
+format = " via [$symbol($version(-$name) )]($style)"
 version_format = "v${raw}"
 style = "149 bold"
 symbol = " "
@@ -117,7 +117,7 @@ vimcmd_replace_one_symbol = "[❮](bold purple)"
 disabled = false
 
 [cmake]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "△ "
 style = "bold blue"
@@ -139,7 +139,7 @@ show_notifications = false
 min_time_to_notify = 45000
 
 [cobol]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "⚙️ "
 style = "bold blue"
@@ -155,7 +155,7 @@ detect_folders = []
 
 [conda]
 truncation_length = 1
-format = "via [$symbol$environment]($style) "
+format = " via [$symbol$environment]($style) "
 symbol = "🅒 "
 style = "green bold"
 ignore_base = true
@@ -168,7 +168,7 @@ style = "red bold dimmed"
 disabled = false
 
 [crystal]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold red"
@@ -179,7 +179,7 @@ detect_folders = []
 
 [daml]
 symbol = "Λ "
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 style = "bold cyan"
 disabled = false
@@ -188,7 +188,7 @@ detect_files = ["daml.yaml"]
 detect_folders = []
 
 [dart]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold blue"
@@ -202,7 +202,7 @@ detect_files = [
 detect_folders = [".dart_tool"]
 
 [deno]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "🦕 "
 style = "green bold"
@@ -248,7 +248,7 @@ Videos = "  "
 [docker_context]
 symbol = " "
 style = "blue bold"
-format = "via [$symbol$context]($style) "
+format = " via [$symbol$context]($style) "
 only_with_files = true
 disabled = false
 detect_extensions = []
@@ -260,7 +260,7 @@ detect_files = [
 detect_folders = []
 
 [dotnet]
-format = "via [$symbol($version )(🎯 $tfm )]($style)"
+format = " via [$symbol($version )(🎯 $tfm )]($style)"
 version_format = "v${raw}"
 symbol = ".NET "
 style = "blue bold"
@@ -281,7 +281,7 @@ detect_files = [
 detect_folders = []
 
 [elixir]
-format = 'via [$symbol($version \(OTP $otp_version\) )]($style)'
+format = ' via [$symbol($version \(OTP $otp_version\) )]($style)'
 version_format = "v${raw}"
 symbol = " "
 style = "bold purple"
@@ -291,7 +291,7 @@ detect_files = ["mix.exs"]
 detect_folders = []
 
 [elm]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "cyan bold"
@@ -307,7 +307,7 @@ detect_folders = ["elm-stuff"]
 [env_var]
 
 [erlang]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold red"
@@ -320,7 +320,7 @@ detect_files = [
 detect_folders = []
 
 [fennel]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold green"
@@ -413,7 +413,7 @@ ignore_submodules = false
 disabled = false
 
 [golang]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold cyan"
@@ -432,7 +432,7 @@ detect_files = [
 detect_folders = ["Godeps"]
 
 [gradle]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "🅶 "
 style = "bold bright-cyan"
@@ -446,13 +446,13 @@ detect_files = []
 detect_folders = ["gradle"]
 
 [guix_shell]
-format = "via [$symbol]($style) "
+format = " via [$symbol]($style) "
 symbol = " "
 style = "yellow bold"
 disabled = false
 
 [haskell]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold purple"
@@ -469,7 +469,7 @@ detect_files = [
 detect_folders = []
 
 [haxe]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold fg:202"
@@ -489,7 +489,7 @@ detect_folders = [
 ]
 
 [helm]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "⎈ "
 style = "bold white"
@@ -521,7 +521,7 @@ disabled = true
 
 [java]
 disabled = false
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 style = "red dimmed"
 symbol = " "
@@ -555,7 +555,7 @@ style = "bold blue"
 disabled = false
 
 [julia]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold purple"
@@ -568,7 +568,7 @@ detect_files = [
 detect_folders = []
 
 [kotlin]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold blue"
@@ -604,7 +604,7 @@ style = "yellow bold"
 disabled = false
 
 [lua]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold blue"
@@ -616,7 +616,7 @@ detect_folders = ["lua"]
 
 [memory_usage]
 threshold = 75
-format = "via $symbol[$ram( | $swap)]($style) "
+format = " via $symbol[$ram( | $swap)]($style) "
 style = "white bold dimmed"
 symbol = "󰍛 "
 disabled = true
@@ -624,13 +624,13 @@ disabled = true
 [meson]
 truncation_length = 4294967295
 truncation_symbol = "…"
-format = "via [$symbol$project]($style) "
+format = " via [$symbol$project]($style) "
 symbol = "⬢ "
 style = "blue bold"
 disabled = false
 
 [nim]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "󰆥 "
 style = "yellow bold"
@@ -644,7 +644,7 @@ detect_files = ["nim.cfg"]
 detect_folders = []
 
 [nix_shell]
-format = 'via [$symbol$state( \($name\))]($style) '
+format = ' via [$symbol$state( \($name\))]($style) '
 symbol = " "
 style = "bold blue"
 impure_msg = "impure"
@@ -654,7 +654,7 @@ disabled = false
 heuristic = false
 
 [nodejs]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold green"
@@ -676,7 +676,7 @@ detect_files = [
 detect_folders = ["node_modules"]
 
 [ocaml]
-format = 'via [$symbol($version )(\($switch_indicator$switch_name\) )]($style)'
+format = ' via [$symbol($version )(\($switch_indicator$switch_name\) )]($style)'
 version_format = "v${raw}"
 global_switch_indicator = ""
 local_switch_indicator = "*"
@@ -703,7 +703,7 @@ detect_folders = [
 ]
 
 [opa]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "🪖  "
 style = "bold blue"
@@ -777,7 +777,7 @@ disabled = false
 version_format = "v${raw}"
 
 [perl]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "149 bold"
@@ -799,7 +799,7 @@ detect_files = [
 detect_folders = []
 
 [php]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "147 bold"
@@ -820,7 +820,7 @@ truncation_symbol = "…"
 disabled = false
 
 [pulumi]
-format = "via [$symbol($username@)$stack]($style) "
+format = " via [$symbol($username@)$stack]($style) "
 version_format = "v${raw}"
 symbol = " "
 style = "bold 5"
@@ -828,7 +828,7 @@ disabled = false
 search_upwards = true
 
 [purescript]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "<=> "
 style = "bold white"
@@ -845,7 +845,7 @@ python_binary = [
     "python3",
     "python2",
 ]
-format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = ' via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 version_format = "v${raw}"
 style = "yellow bold"
 symbol = " "
@@ -863,7 +863,7 @@ detect_files = [
 detect_folders = []
 
 [raku]
-format = "via [$symbol($version-$vm_version )]($style)"
+format = " via [$symbol($version-$vm_version )]($style)"
 version_format = "${raw}"
 symbol = "🦋 "
 style = "149 bold"
@@ -879,7 +879,7 @@ detect_files = ["META6.json"]
 detect_folders = []
 
 [red]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "🔺 "
 style = "red bold"
@@ -892,7 +892,7 @@ detect_files = []
 detect_folders = []
 
 [rlang]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 style = "blue bold"
 symbol = "󰟔 "
@@ -908,7 +908,7 @@ detect_files = [".Rprofile"]
 detect_folders = [".Rproj.user"]
 
 [ruby]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold red"
@@ -925,7 +925,7 @@ detect_variables = [
 ]
 
 [rust]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold red"
@@ -935,7 +935,7 @@ detect_files = ["Cargo.toml"]
 detect_folders = []
 
 [scala]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 disabled = false
 style = "red bold"
@@ -985,7 +985,7 @@ style = "blue bold dimmed"
 disabled = false
 
 [solidity]
-format = "via [$symbol($version)]($style)"
+format = " via [$symbol($version)]($style)"
 version_format = "v${major}.${minor}.${patch}"
 disabled = false
 style = "bold blue"
@@ -997,7 +997,7 @@ detect_folders = []
 
 [spack]
 truncation_length = 1
-format = "via [$symbol$environment]($style) "
+format = " via [$symbol$environment]($style) "
 symbol = "🅢 "
 style = "blue bold"
 disabled = false
@@ -1026,7 +1026,7 @@ allow_windows = false
 disabled = false
 
 [swift]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold 202"
@@ -1036,7 +1036,7 @@ detect_files = ["Package.swift"]
 detect_folders = []
 
 [terraform]
-format = "via [$symbol$workspace]($style) "
+format = " via [$symbol$workspace]($style) "
 version_format = "v${raw}"
 symbol = "💠 "
 style = "bold 105"
@@ -1071,7 +1071,7 @@ show_always = true
 disabled = false
 
 [vagrant]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "⍱ "
 style = "cyan bold"
@@ -1087,7 +1087,7 @@ format = "vcsh [$symbol$repo]($style) "
 disabled = false
 
 [vlang]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = "V "
 style = "blue bold"
@@ -1101,7 +1101,7 @@ detect_files = [
 detect_folders = []
 
 [zig]
-format = "via [$symbol($version )]($style)"
+format = " via [$symbol($version )]($style)"
 version_format = "v${raw}"
 symbol = " "
 style = "bold yellow"
