@@ -33,7 +33,7 @@
         "id": "c0e4ddda-94bb-478b-b43d-c7aee2c8ca0f",
         "name": "Nix Packages",
         "keyword": "nixpkg",
-        "cmd": "https://search.nixos.org/packages?channel=24.11&from=0&size=50&sort=relevance&type=packages&query=%s",
+        "cmd": "https://search.nixos.org/packages?channel=25.05&from=0&size=50&sort=relevance&type=packages&query=%s",
         "icon": "~/Pictures/icons/Nix_Snowflake_Logo.svg",
         "is_default_search": false,
         "run_without_argument": false,
