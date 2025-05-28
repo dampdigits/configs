@@ -44,7 +44,7 @@ if [ -e "$HOME/.vimrc" ]; then
     mv "$HOME/.vimrc" "$backup_file"
 fi
 # Create new symlink
-ln -sf "$DOTFILES_DIR/vim/vimrc" "$HOME/.vimrc"
+ln -sf "$DOTFILES_DIR/vim/.vimrc" "$HOME/.vimrc"
 
 ###################################################################################################
 ## Install git configuration
