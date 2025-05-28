@@ -3,8 +3,6 @@
 	email = dampdigits@gmail.com
 [color]
 	ui = auto
-[core]
-	editor = nvim
 [init]
 	defaultBranch = main
 
