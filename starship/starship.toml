@@ -769,7 +769,7 @@ Unknown = " "
 Windows = "󰍲 "
 
 [package]
-format = "is [$symbol$version]($style) "
+format = " is [$symbol$version]($style) "
 symbol = "󰏗 "
 style = "208 bold"
 display_private = false
