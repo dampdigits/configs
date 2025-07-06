@@ -258,7 +258,7 @@ xnoremap y y
 " VIMSCRIPT -------------------------------------------------------------- {{{
 
 " Set colorscheme
-autocmd vimenter * ++nested colorscheme habamax
+autocmd vimenter * ++nested colorscheme onedark
 
 " Start NERDTree. If a file is specified, move the cursor to its window.
 autocmd StdinReadPre * let s:std_in=1
@@ -294,9 +294,6 @@ if has('gui_running')
 
     " Set the background tone.
     set background=dark
-
-    " Set the color scheme.
-    colorscheme habamax
 
     " Set a custom font you have installed on your computer.
     " Syntax: <font_name>\ <weight>\ <size>
