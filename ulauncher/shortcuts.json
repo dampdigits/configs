@@ -4,7 +4,7 @@
         "name": "Google Search",
         "keyword": "g",
         "cmd": "https://google.com/search?q=%s",
-        "icon": "/nix/store/xk17qmnnp9c923fgc1z2ahx38hj3shwb-ulauncher-5.15.7/share/ulauncher/media/google-search-icon.png",
+        "icon": "~/Pictures/icons/google_g_icon.png",
         "is_default_search": true,
         "run_without_argument": false,
         "added": 1745665253.4579744
@@ -14,7 +14,7 @@
         "name": "Stack Overflow",
         "keyword": "so",
         "cmd": "https://stackoverflow.com/search?q=%s",
-        "icon": "/nix/store/xk17qmnnp9c923fgc1z2ahx38hj3shwb-ulauncher-5.15.7/share/ulauncher/media/stackoverflow-icon.svg",
+        "icon": "~/Pictures/icons/stack_overflow_icon.png",
         "is_default_search": true,
         "run_without_argument": false,
         "added": 1745665253.4580114
@@ -24,7 +24,7 @@
         "name": "Wikipedia",
         "keyword": "wiki",
         "cmd": "https://en.wikipedia.org/wiki/%s",
-        "icon": "/nix/store/xk17qmnnp9c923fgc1z2ahx38hj3shwb-ulauncher-5.15.7/share/ulauncher/media/wikipedia-icon.png",
+        "icon": "~/Pictures/icons/wikipedia_icon.png",
         "is_default_search": true,
         "run_without_argument": false,
         "added": 1745665253.4580395
