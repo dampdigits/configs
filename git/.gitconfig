@@ -10,3 +10,5 @@
 	email = dampdigits@gmail.com
 [init]
 	defaultBranch = main
+[core]
+	editor = vim
