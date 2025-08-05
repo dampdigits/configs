@@ -27,7 +27,7 @@ alias please='sudo $(history -p !!)'                # Retry last command with su
 alias ports='sudo netstat -tulanp'                  # See open ports
 alias psg='ps aux | grep -i'                        # Search processes
 alias own='sudo chown -R $USER:$USER .'             # Take ownership of current directory
-alias rm='mv -t ~/.local/share/Trash/'              # Moves to Trash instead of delete (needs `Trash/` set up)
+alias safe_rm='mv -t ~/.local/share/Trash/'              # Moves to Trash instead of delete (needs `Trash/` set up)
 
 #########################################################################################################
 
