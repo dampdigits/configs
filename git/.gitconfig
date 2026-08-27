@@ -12,3 +12,5 @@
 	defaultBranch = main
 [core]
 	editor = vim
+[safe]
+	directory = /home/dampdigits/projects/dampdigits/configs
