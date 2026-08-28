@@ -27,37 +27,32 @@ return {
   },
 
   -- Auto switch themes
-  -- {
-  --   "f-person/auto-dark-mode.nvim",
-  --   lazy = false,
-  --   config = function()
-  --     local auto_dark_mode = require("auto-dark-mode")
-  --
-  --     local light_theme = "ayu_light"
-  --     local dark_theme = "ayu_dark"
-  --
-  --     auto_dark_mode.setup({
-  --       -- Interval in millisecond to check system theme
-  --       update_interval = 1000,
-  --
-  --       set_light_mode = function()
-  --         vim.api.nvim_set_option_value("background", "light", {})
-  --
-  --         if vim.g.nvchad_theme ~= light_theme then
-  --           vim.g.nvchad_theme = light_theme
-  --           require("base46").toggle_theme()
-  --         end
-  --       end,
-  --
-  --       set_dark_mode = function()
-  --         vim.api.nvim_set_option_value("background", "dark", {})
-  --
-  --         if vim.g.nvchad_theme ~= dark_theme then
-  --           vim.g.nvchad_theme = dark_theme
-  --           require("base46").toggle_theme()
-  --         end
-  --       end,
-  --     })
-  --   end,
-  -- },
+  {
+    "f-person/auto-dark-mode.nvim",
+    lazy = false,
+    config = function()
+      local auto_dark_mode = require("auto-dark-mode")
+
+      local light_theme = "github_light"
+      local dark_theme = "github_dark"
+
+      auto_dark_mode.setup({
+        update_interval = 1000,
+
+        set_light_mode = function()
+          vim.api.nvim_set_option_value("background", "light", {})
+          if vim.g.nvchad_theme ~= light_theme then
+            require("base46").toggle_theme()
+          end
+        end,
+
+        set_dark_mode = function()
+          vim.api.nvim_set_option_value("background", "dark", {})
+          if vim.g.nvchad_theme ~= dark_theme then
+            require("base46").toggle_theme()
+          end
+        end,
+      })
+    end,
+  },
 }
